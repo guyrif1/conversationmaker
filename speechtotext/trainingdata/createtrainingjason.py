@@ -1,9 +1,9 @@
 import json
 import csv
 
-csv_file_path = "C:/Users/guyri/Desktop/common/common-voice"
-dump_json_file_path = "C:/Users/guyri/PycharmProjects/conversationmaker/speechtotext/jasons"
-data_json_file_path = "C:/Users/guyri/PycharmProjects/conversationmaker/speechtotext/jasons"
+csv_file_path = "C:/Users/guyri/Desktop/common/common-voice/cv-valid-dev.csv"
+dump_json_file_path = "C:/Users/guyri/PycharmProjects/conversationmaker/speechtotext/jasons/dumpdata.json"
+data_json_file_path = "C:/Users/guyri/PycharmProjects/conversationmaker/speechtotext/jasons/data.json"
 data_sort = []
 
 
