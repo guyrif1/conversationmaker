@@ -2,7 +2,7 @@ import json
 import csv
 
 csv_file_path = "C:/Users/guyri/Desktop/common/common-voice/cv-valid-dev.csv"
-dump_json_file_path = "C:/Users/guyri/PycharmProjects/conversationmaker/speechtotext/jasons/dumpdata.json"
+data_json_file_path = "/speechtotext/jasons/data.json"
 data_sort = []
 
 
