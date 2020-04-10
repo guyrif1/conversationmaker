@@ -1,9 +1,9 @@
 import json
 import csv
 
-csv_file_path = "C:/Users/Guy's Laptop/Downloads/cv-valid-dev.csv"
-dump_json_file_path = "C:/Users/Guy's Laptop\/PycharmProjects/SocialBot/speechtotext/jasons/data.json"
-data_json_file_path = "C:/Users/Guy's Laptop\/PycharmProjects/SocialBot/speechtotext/jasons/training_data.json"
+csv_file_path = "C:/Users/guyri/Desktop/common/common-voice"
+dump_json_file_path = "C:/Users/guyri/PycharmProjects/conversationmaker/speechtotext/jasons"
+data_json_file_path = "C:/Users/guyri/PycharmProjects/conversationmaker/speechtotext/jasons"
 data_sort = []
 
 
