@@ -3,7 +3,7 @@ import os
 
 from typing import List
 
-from keras.models import Model
+from tensorflow.keras.models import Model
 
 from speechtotext.speech.alphabet import Alphabet
 from speechtotext.speech.alphabet import load as load_alphabet

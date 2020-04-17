@@ -95,8 +95,7 @@ class DataGenerator:
         self.current_batch_index = 0
 
     def get_batch(self):
-        return Batch(self.data[self.current_batch_index:self.current_batch_index + self.batch_size], self.alphabet)\
-            .get()
+        return Batch(self.data[self.current_batch_index:self.current_batch_index + self.batch_size], self.alphabet).get()
 
     def next_batch(self) -> Batch:
         while True:

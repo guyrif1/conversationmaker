@@ -1,10 +1,10 @@
 {
-  "epochs": 10,
-  "batchSize": 20,
-  "trainingDataQuantity": 4076,
+  "epochs": 20,
+  "batchSize": 100,
+  "trainingDataQuantity": 195776,
   "net": "graves",
   "trainingData": [
-    "speech-to-text/training_data.json"
+    "C:/Users/guyri/PycharmProjects/conversationmaker/speechtotext/jasons/data.json"
   ],
-  "alphabetPath": "speech-to-text/examples/english.json"
+  "alphabetPath": "C:/Users/guyri/PycharmProjects/conversationmaker/speechtotext/jasons/english.json"
 }
