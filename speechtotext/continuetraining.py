@@ -28,8 +28,7 @@ def main(path: str):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Continue an interrupted training')
-    parser.add_argument('path', help='Path to a directory where the training data is stored')
-    args = parser.parse_args()
-
-    main(args.path)
+    #parser = argparse.ArgumentParser(description='Continue an interrupted training')
+    #parser.add_argument('path', help='Path to a directory where the training data is stored')
+    #args = parser.parse_args()
+    main("C:\\Users\\guyri\\PycharmProjects\\conversationmaker\\speechtotext\\trainingfiles\\trainingfiles")
