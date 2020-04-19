@@ -1,6 +1,7 @@
 from typing import List
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 import speechtotext.training.callbacks.trainingcallback as trainingcallback
+import numpy as np
 
 from speechtotext.training.datagenerator import DataGenerator
 from speechtotext.training.trainingconfig import TrainingConfig
@@ -53,13 +54,13 @@ def run_training(training: Training,
 
     log.info("starting training ...")
 
-    model.fit_generator(generator=training_data_generator.next_batch(),
-                        steps_per_epoch=steps_per_epoch,
-                        epochs=training.epochs,
-                        validation_data=validation_data_generator.next_batch(),
-                        validation_steps=validation_steps,
-                        verbose=1,
-                        callbacks=[trainingcallback.TrainingCallback(save_file_path, statistics, training, config)],
-                        initial_epoch=training.passed_epochs)
+    model.fit(x=training_data_generator.next_batch(),
+              steps_per_epoch=steps_per_epoch,
+              epochs=training.epochs,
+              validation_data=validation_data_generator.next_batch(),
+              validation_steps=validation_steps,
+              verbose=1,
+              callbacks=[trainingcallback.TrainingCallback(save_file_path, statistics, training, config)],
+              initial_epoch=training.passed_epochs)
 
     log.info('Training finished')

@@ -27,11 +27,16 @@ def main(path: str, training_plan_path: str):
 
 
 if __name__ == '__main__':
-    logger = get_logger(name=__name__)
 
-    parser = argparse.ArgumentParser(description='Train a model using the given training plan',)
-    parser.add_argument('path', help='Path to new training file')
-    parser.add_argument('plan', help='Path to the training configuration')
-    args = parser.parse_args()
+    main("C:/Users/guyri/PycharmProjects/conversationmaker/speechtotext/trainingfiles", "C:/Users/guyri/PycharmProjects/conversationmaker/speechtotext/jasons/training.config.json")
+    #logger = get_logger(name=__name__)
+    #parser = argparse.ArgumentParser(description='Train a model using the given training plan',)
+    #parser.add_argument('path', help='Path to new training file')
+    #parser.add_argument('plan', help='Path to the training configuration')
+    #args = parser.parse_args()
 
-    main(args.path, args.plan)
+"""
+Important paths:
+"C:/Users/guyri/PycharmProjects/conversationmaker/speechtotext/trainingfiles"
+"C:/Users/guyri/PycharmProjects/conversationmaker/speechtotext/jasons/training.config.json"
+"""

@@ -2,9 +2,9 @@ import json
 import os
 from typing import List
 
-from keras import backend as K
-from keras.models import Model, model_from_json
-from keras.layers import (BatchNormalization,
+from tensorflow.keras import backend as K
+from tensorflow.keras.models import Model, model_from_json
+from tensorflow.keras.layers import (BatchNormalization,
                           Dense,
                           Input,
                           TimeDistributed,

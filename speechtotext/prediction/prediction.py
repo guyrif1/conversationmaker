@@ -1,7 +1,7 @@
 import os
 import numpy as np
-import keras.backend as K
-from keras import Model
+import tensorflow.keras.backend as K
+from tensorflow.keras import Model
 
 from speechtotext.speech.processing import calculate_mfccs
 from speechtotext.speech.alphabet import int_to_text_sequence, Alphabet
